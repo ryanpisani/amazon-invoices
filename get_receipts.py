@@ -45,7 +45,7 @@ with sync_playwright() as p:
         #page.click("#continue")
     pass_locator = page.locator("#ap_password")
     if pass_locator.count() > 0:
-        time.sleep(1)
+        time.sleep(3)
         page.fill("#ap_password", f"{cfg.PASSWORD}")
         page.click("#signInSubmit")
 
